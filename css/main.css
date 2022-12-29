@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('./article.css');
+
+body {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy"),
+        url("./../assets/fonts/Gilroy-ExtraBold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy"),
+        url("./../assets/fonts/Gilroy-Light.otf") format("opentype")
+}
+
+.responsive {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Amarante', serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.search-input {
+    background: #F3F4F8;
+    color: rgba(16, 29, 27, 0.4);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131.8%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 14px;
+}
+
+
+
+.search-input::placeholder {
+    color: rgba(23, 41, 38, 0.4);
+}
+
+.search-input:focus {
+    box-shadow: none;
+    border: 1px solid rgb(0, 168, 0);
+    background: #F3F4F8;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.shadow-btm {
+    box-shadow: 0px 4px 13px -2px rgba(0, 0, 0, 0.04);
+    z-index: 14;
+}
+
+.chosen-atcl {
+    margin-bottom: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.8%;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-gray {
+    background: #F3F4F8;
+}
+
+.bg-paper {
+    background-color: #F5EBD8;
+}
+
+.text-atcl {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 131.8%;
+    color: #000000;
+}
+
+.read-btn {
+    width: max-content;
+    padding: 10px 33px;
+    background: #FFFFFF;
+    border: 1px solid #C5CDCC;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 131.8%;
+    text-decoration: none;
+}
+
+.read-btn:focus {
+    border: 1px solid rgb(0, 168, 0);
+}
+
+.read-btn:hover {
+    color: black;
+}
+
+.link-artcl {
+    color: black;
+}
+
+.back-btn {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-image: url('./../assets/images/back.svg');
+    background-repeat: no-repeat;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 131.8%;
+    color: #000000;
+    font-family: 'Amarante';
+}
+
+.artcl-header {
+    height: 75px;
+    display: flex;
+    gap: 17px;
+    padding: 14px 16px 11px 16px;
+    align-items: center;
+}
+
+.height {
+    min-height: calc(100vh - 75px);
+    height: 100%;
+}
+
+.menu-head {
+    padding: 14px 0;
+    gap: 15px;
+}
+
+@media (max-width: 390px) {
+    .back-btn {
+        height: 50px;
+        width: 70px;
+        padding-right: 20px;
+        cursor: pointer;
+        background-image: url('./../assets/images/back.svg');
+        background-repeat: no-repeat;
+    }
+}
